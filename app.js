@@ -12,4 +12,5 @@ const app = Vue.createApp({
   },
 });
 
+// ongoing
 app.mount("#user-goals");
