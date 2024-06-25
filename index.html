@@ -22,9 +22,9 @@
       <button @click="addGoal">Add Goal</button>
       <p v-if="goals.length === 0">
         No goals have been added yet - please start adding some!
-      </p>
-      <ul>
-        <li>Goal</li>
+      </p v-else>
+      <ul v-for="goal in goals">
+        <li>{{ goal }}</li>
       </ul>
     </section>
   </body>
